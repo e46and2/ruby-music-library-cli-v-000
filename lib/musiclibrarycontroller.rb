@@ -109,7 +109,7 @@ def list_genres
     
     if (input > 0) && (input <= list_songs.size)
       song = list_songs.song[input+2]
-      puts "Playing #{list_songs.song.name} by #{song.artist}"
+      puts "Playing #{song.name} by #{song.artist}"
       binding.pry 
     end
   end
