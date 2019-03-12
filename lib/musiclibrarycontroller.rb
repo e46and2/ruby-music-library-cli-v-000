@@ -105,7 +105,7 @@ def list_genres
     list_songs
     #list_of_songs =  Song.all.sort{ |a, b| a.name <=> b.name }
     input = gets.strip.to_i
-    song = list_songs.song[input+2]
+    #song = list_songs.song[input+2]
     
     if (input > 0) && (input <= list_songs.size)
       #song = list_songs.song[input+2]
