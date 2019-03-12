@@ -105,7 +105,7 @@ def list_genres
     input = gets.strip.to_i
     #song = list_songs.song[input+2]
     
-    if (input > 0) && (input <= list_songs.size)
+    if (input > 0) && (input <= list_of_songs.size)
       song = list_of_songs.songs[input]
       puts "Playing #{song.name} by #{song.artist}"
       binding.pry 
