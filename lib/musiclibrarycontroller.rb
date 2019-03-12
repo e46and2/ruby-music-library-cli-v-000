@@ -47,11 +47,9 @@ def call
 end 
 
 def list_songs
-  songs = []
-  songs << Song.all.sort{ |a, b| a.name <=> b.name }.each.with_index(1) do |s, i| puts "#{i}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
+  Song.all.sort{ |a, b| a.name <=> b.name }.each.with_index(1) do |s, i| puts "#{i}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
     #binding.pry
       end
-      songs 
 #binding.pry
 end
 #binding.pry
